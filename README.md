@@ -9,3 +9,7 @@ React: create-react-app, react-router-dom, Semantic UI React<br>
 ## 說明
 
 2019/02/13 - 攻略完第一個 Boss
+
+## 發布
+
+http://52.163.86.176:8002/
