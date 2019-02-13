@@ -1,4 +1,4 @@
-# 六腳學院在 Udemy 上推出的新手 JavaScript 練習
+# 六角學院在 Udemy 上推出的新手 JavaScript 練習
 
 將練習結果整合到一個網站上，使用 React 製作的 SPA
 
