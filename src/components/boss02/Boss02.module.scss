@@ -1,0 +1,54 @@
+.clock {
+  width: 550px;
+  height: 550px;
+  background-image: url(./img/clock-bg.svg);
+  background-size: cover;
+  margin: 50px auto;
+  position: relative;
+  box-sizing: border-box;
+
+  &_face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .hand_hour {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -6px;
+      margin-left: -4px;
+      transform-origin: 4% 66%;
+      width: 72px;
+      height: 8px;
+      background-image: url(./img//hour-hand.svg);
+      background-size: cover;
+    }
+
+    .hand_min {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -4px;
+      margin-top: -6px;
+      transform-origin: 60% 5%;
+      width: 8px;
+      height: 96px;
+      background-image: url(./img//minute-hand.svg);
+      background-size: cover;
+    }
+
+    .hand_sec {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -6px;
+      margin-top: -6px;
+      transform-origin: 34% 2%;
+      width: 12px;
+      height: 126px;
+      background-image: url(./img//second-hand.svg);
+      background-size: cover;
+    }
+  }
+}
