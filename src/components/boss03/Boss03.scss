@@ -1,0 +1,17 @@
+.wrapper {
+  width: 350px;
+  height: 525px;
+  background-color: #062145;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin: auto;
+
+  .buttons {
+    width: 100%;
+    height: calc(100% - 110px);
+    padding: 16px 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
