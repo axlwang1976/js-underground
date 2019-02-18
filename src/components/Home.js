@@ -32,6 +32,13 @@ const Home = () => (
         </Link>
       </Grid.Column>
     </Grid>
+    <Grid>
+      <Grid.Column textAlign="center">
+        <Link to="/boss04">
+          <Button primary>BOSS-04：時區</Button>
+        </Link>
+      </Grid.Column>
+    </Grid>
   </>
 );
 

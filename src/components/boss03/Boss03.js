@@ -36,15 +36,6 @@ class Boss03 extends React.Component {
       this.setState({ calc: newCalc });
     } else if (value === 'equal') {
       this.doCalc();
-    } else if (
-      value === '/' ||
-      value === '*' ||
-      value === '-' ||
-      value === '+'
-    ) {
-      const newCalc = [...this.state.calc];
-      newCalc.push(label);
-      this.setState({ calc: newCalc });
     } else {
       const newCalc = [...this.state.calc];
       newCalc.push(value);
@@ -60,19 +51,19 @@ class Boss03 extends React.Component {
           <Button onClick={this.onClickHandler} label="7" value="7" />
           <Button onClick={this.onClickHandler} label="8" value="8" />
           <Button onClick={this.onClickHandler} label="9" value="9" />
-          <Button onClick={this.onClickHandler} label=" &divide; " value="/" />
+          <Button onClick={this.onClickHandler} label="&divide;" value="/" />
           <Button onClick={this.onClickHandler} label="4" value="4" />
           <Button onClick={this.onClickHandler} label="5" value="5" />
           <Button onClick={this.onClickHandler} label="6" value="6" />
-          <Button onClick={this.onClickHandler} label=" &times; " value="*" />
+          <Button onClick={this.onClickHandler} label="&times;" value="*" />
           <Button onClick={this.onClickHandler} label="1" value="1" />
           <Button onClick={this.onClickHandler} label="2" value="2" />
           <Button onClick={this.onClickHandler} label="3" value="3" />
-          <Button onClick={this.onClickHandler} label=" &#43; " value="+" />
+          <Button onClick={this.onClickHandler} label="&#43;" value="+" />
           <Button onClick={this.onClickHandler} label="0" value="0" />
           <Button onClick={this.onClickHandler} label="00" value="00" />
           <Button onClick={this.onClickHandler} label="." value="." />
-          <Button onClick={this.onClickHandler} label=" &minus; " value="-" />
+          <Button onClick={this.onClickHandler} label="&minus;" value="-" />
           <Button onClick={this.onClickHandler} label="AC" value="clear" />
           <Button onClick={this.onClickHandler} label="⌫" value="del" />
           <Button
