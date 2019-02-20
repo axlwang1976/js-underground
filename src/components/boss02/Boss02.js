@@ -1,4 +1,6 @@
 import React from 'react';
+import { Grid, Button } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 import styles from './Boss02.module.scss';
 
@@ -26,22 +28,31 @@ class Boss02 extends React.Component {
 
   render() {
     return (
-      <div className={styles.clock}>
-        <div className={styles.clock_face}>
-          <div
-            className={styles.hand_hour}
-            style={{ transform: `rotate(${this.state.hourDeg}deg)` }}
-          />
-          <div
-            className={styles.hand_min}
-            style={{ transform: `rotate(${this.state.minDeg}deg)` }}
-          />
-          <div
-            className={styles.hand_sec}
-            style={{ transform: `rotate(${this.state.secDeg}deg)` }}
-          />
+      <>
+        <Grid>
+          <Grid.Column textAlign="center">
+            <Link to="/">
+              <Button primary>Home</Button>
+            </Link>
+          </Grid.Column>
+        </Grid>
+        <div className={styles.clock}>
+          <div className={styles.clock_face}>
+            <div
+              className={styles.hand_hour}
+              style={{ transform: `rotate(${this.state.hourDeg}deg)` }}
+            />
+            <div
+              className={styles.hand_min}
+              style={{ transform: `rotate(${this.state.minDeg}deg)` }}
+            />
+            <div
+              className={styles.hand_sec}
+              style={{ transform: `rotate(${this.state.secDeg}deg)` }}
+            />
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }
